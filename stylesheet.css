@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+.section {
+  width: 100vw;
+  height: auto;
+  aspect-ratio: 4/1;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  background-image: url("img/header.png");
+}
+.section-2 {
+  background-image: url("img/Section 2.png");
+}
+.section-3 {
+  background-image: url("img/Section 3.png");
+}
+.section-4 {
+  background-image: url("img/Section 4.png");
+}
+.footer {
+  background-image: url("img/footer.png");
+}
