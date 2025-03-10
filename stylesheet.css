@@ -9,17 +9,45 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: #000;
+  background-color: #6ec079;
   overflow-x: hidden;
 }
 
-.section {
+.section,
+.section-t {
   width: 100vw;
   height: auto;
-  aspect-ratio: 4/1;
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.section-t {
+  aspect-ratio: 8/3;
+}
+
+.section {
+  aspect-ratio: 4/1;
+}
+
+.section-2 {
+  position: relative;
+  padding: 50px;
+  max-height: 250px;
+  min-height: 25vw;
+}
+
+.about-text {
+  position: absolute;
+  bottom: 1vh;
+  left: 2.5vw;
+  color: white;
+  font-size: 1.9vw;
+  font-weight: bold;
+  padding: 1vw;
+  border-radius: 1vw;
+  max-width: 24vw;
+  max-height: 100%;
 }
 
 .header {
@@ -33,6 +61,9 @@ body {
 }
 .section-4 {
   background-image: url("img/Section 4.png");
+}
+.section-5 {
+  background-image: url("img/section-5.jpg");
 }
 .footer {
   background-image: url("img/footer.png");
