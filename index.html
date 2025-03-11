@@ -1,28 +1,165 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nettside med bakgrunnsbilder</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MR.Satoshi.BTC</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        background-color: #6ec079; /* Fond vert */
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+        max-width: 600px; /* Ajusté pour un rendu mobile-first */
+      }
+
+      .image {
+        width: 100%;
+        display: block;
+      }
+
+      /* Positionnement du bouton BUY NOW */
+      .buy-now {
+        position: absolute;
+        top: 30%;
+        left: 57%;
+        transform: translateX(-50%);
+        width: 15%;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .buy-now:hover {
+        transform: translateX(-50%) scale(1.1);
+      }
+
+      /* Positionnement du deuxième bouton BUY NOW */
+      .buy-now2 {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .buy-now2:hover {
+        transform: translateX(-50%) scale(1.1);
+      }
+
+      /* Positionnement du bloc JOIN US + Icônes */
+      .join-us {
+        position: absolute;
+        top: 570px;
+        left: 13%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .join-us img {
+        width: 75px;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .join-us img:hover {
+        transform: scale(1.1);
+      }
+
+      /* Icônes sociales */
+      .social-icons {
+        display: flex;
+        gap: 15px;
+      }
+
+      .social-icons img {
+        width: 35px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .social-icons img:hover {
+        transform: scale(1.2);
+      }
+
+      /* Adaptation mobile */
+      @media (max-width: 768px) {
+        .container {
+          max-width: 100%;
+        }
+
+        .buy-now {
+          top: 45vw;
+        }
+
+        .join-us {
+          top: 95vw;
+          width: 22vw;
+          height: 10vw;
+        }
+
+        .join-us img {
+          width: 13vw;
+          height: 5vw;
+        }
+
+        .social-icons img {
+          width: 6vw;
+          height: 6vw;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="section header"></div>
+    <div class="container">
+      <!-- Images de fond -->
+      <img src="img/header.jpg" alt="WS Header" class="image" />
+      <img src="img/Section 2.png" alt="Section 2" class="image" />
 
-    <div class="section section-2">
-      <p class="about-text">
-        MR SatoshiBTC is the ultimate meme coin merging Bitcoin’s mystery with
-        viral energy. 100% community-driven, decentralized, and built for the
-        future of crypto!
-      </p>
+      <!-- Bouton BUY NOW -->
+      <a href="#"><img src="img/BUYNOW.png" alt="BUY NOW" class="buy-now" /></a>
+
+      <img src="img/Section 3.png" alt="Section 3" class="image" />
+      <img src="img/Section 4.png" alt="Section 4" class="image" />
+
+      <!-- Bouton BUY NOW (2e bouton) sur l'avant-dernière section -->
+      <!--<a href="#"
+        ><img src="img/BUYNOW2.png" alt="BUY NOW" class="buy-now2"
+      /></a>-->
+
+      <img src="img/section-5.jpg" alt="Section 5" class="image" />
+
+      <!-- Section JOIN US + Icônes -->
+      <div class="join-us">
+        <img src="img/JOINUS!.png" alt="JOIN US" />
+        <div class="social-icons">
+          <a href="#"><img src="img/DEX.png" alt="DEX" /></a>
+          <a href="#"><img src="img/TG.png" alt="Telegram" /></a>
+          <a href="#"><img src="img/X.png" alt="Twitter" /></a>
+        </div>
+      </div>
+
+      <img src="img/footer.png" alt="Footer" class="image" />
     </div>
-
-    <div class="section section-3"></div>
-
-    <div class="section section-4"></div>
-
-    <div class="section-t section-5"></div>
-
-    <div class="section footer"></div>
   </body>
 </html>
